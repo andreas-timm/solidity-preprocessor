@@ -1,0 +1,40 @@
+{
+    "name": "@andreas-timm/solidity-preprocessor",
+    "description": "Solidity preprocessor",
+    "version": "0.1.7",
+    "keywords": [
+        "contract",
+        "hardhat",
+        "preprocessing",
+        "solidity",
+        "typescript",
+        "viem"
+    ],
+    "author": "Andreas Timm <info@andreas-timm.dev>",
+    "license": "CC-BY-4.0",
+    "homepage": "https://github.com/andreas-timm/solidity-preprocessor#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/andreas-timm/solidity-preprocessor.git"
+    },
+    "bugs": {
+        "url": "https://github.com/andreas-timm/solidity-preprocessor/issues"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@openzeppelin/contracts": "^5.0.2",
+        "hardhat": "^2.22.6",
+        "solc": "^0.8.26",
+        "tsx": "^4.16.2",
+        "typescript": "^5.5.3",
+        "viem": "^2.17.3"
+    },
+    "scripts": {
+        "build": "scripts/build.sh",
+        "publish": "cd dist; npm publish --access public",
+        "test": "node --import tsx --test tests/*"
+    },
+    "volta": {
+        "node": "20.15.1"
+    }
+}

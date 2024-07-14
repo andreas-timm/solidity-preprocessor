@@ -1,0 +1,21 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  BASH_ENV: ~/.profile
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scripts
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl https://get.volta.sh | bash
+      - run: npm i ci
+      - run: npm run test

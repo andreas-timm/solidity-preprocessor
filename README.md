@@ -4,6 +4,7 @@
 
 ## Motivation
 
+Easy way to preprocess Solidity files, allowing modification of smart contract code dynamically before deployment, improving flexibility in various use cases.
 
 ## Usage
 ```solidity
